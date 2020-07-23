@@ -312,3 +312,22 @@ class AtariModel(parl.Model):
         return Q
 ```
 
+# 参考资料
+
+
+- DQN in [Human-level Control Through Deep Reinforcement Learning](http://www.nature.com/nature/journal/v518/n7540/full/nature14236.html)
+
+- DDQN in [Deep Reinforcement Learning with Double Q-learning](https://arxiv.org/abs/1509.06461)
+
+- Dueling DQN in [Dueling Network Architectures for Deep Reinforcement Learning](https://arxiv.org/abs/1511.06581)
+
+
+- [李宏毅 强化学习 DQN](https://www.bilibili.com/video/BV11x411f7qt?from=search&seid=12688169522000021540)
+
+- [DeepRL系列(10): Dueling DQN(DDQN)原理及实现](https://zhuanlan.zhihu.com/p/114834834)
+
+- [Deep Q Network](https://morvanzhou.github.io/tutorials/machine-learning/reinforcement-learning/)
+
+- [强化学习—DQN算法原理详解](https://wanjun0511.github.io/2017/11/05/DQN/)
+
+- [DQN三大改进(一)-Double DQN](https://www.jianshu.com/p/fae51b5fe000)
