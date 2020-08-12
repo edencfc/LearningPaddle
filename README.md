@@ -11,7 +11,7 @@ PaddlePaddle深度学习框架课程、使用笔记
 
 - [布匹瑕疵检测模型快速迁移学习与部署（PaddleX、Paddle-Lite等）](https://aistudio.baidu.com/aistudio/projectdetail/618168)
 
-- [PaddleDetection:FCOS Anchor Free目标检测算法](https://aistudio.baidu.com/aistudio/projectdetail/237690)
+- [PaddleDetection：FCOS Anchor Free目标检测算法](https://aistudio.baidu.com/aistudio/projectdetail/237690)
 
 ### 图像分割
 
