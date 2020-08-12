@@ -2995,7 +2995,7 @@ python main.py --use_cuda --input_file dataset/input_csv --label_file dataset/ou
 
 ## PGL上的STGCN
 
-1. demo的数据样式没给，而且感觉demo迁移效果不好，只是对传染性传播、交通预测有用
+1. demo的数据格式不，而且感觉demo迁移效果不好，只是对传染性传播、交通预测有用
 2. 路网的模型跑不通，只好自己魔改了先
 3. output的输出结果很奇怪，是归一化之后没还原回去还是咋地？
 

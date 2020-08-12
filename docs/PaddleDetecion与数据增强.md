@@ -303,7 +303,7 @@ plt.show()
 
 
 
-![png](output_24_1.png)
+![png](../imgs/output_24_1.png)
 
 
 ## 数据清洗
@@ -547,7 +547,7 @@ visualize(annotations, category_id_to_name)
 ```
 
 
-![png](output_34_0.png)
+![png](../imgs/output_34_0.png)
 
 
 
@@ -579,7 +579,7 @@ visualize(augmented2, category_id_to_name)
 ```
 
 
-![png](output_36_0.png)
+![png](../imgs/output_36_0.png)
 
 
 

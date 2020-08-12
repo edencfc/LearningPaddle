@@ -23,7 +23,7 @@
 
 再回顾下`DQN`（Deep Q Network）的原理，本质上`DQN`还是一个`Q-learning`算法，更新方式一致。为了更好的探索环境，同样的也采用`ε-greedy`方法训练。
 
-![file](https://wanjun0511.github.io/2017/11/05/DQN/network.jpeg)
+![https://ai-studio-static-online.cdn.bcebos.com/769b5365963d4790ad879d4c0ed5e72398de941ff2404c3cb2ab89d3c45701ad](https://ai-studio-static-online.cdn.bcebos.com/769b5365963d4790ad879d4c0ed5e72398de941ff2404c3cb2ab89d3c45701ad)
 
 但是DQN论文引入了卷积神经网络，并提出两大利器，用于解决DL和RL结合时遇到的问题
 
@@ -46,11 +46,11 @@
 
 ## DQN算法具体流程
 
-![file](https://wanjun0511.github.io/2017/11/05/DQN/dqn.png)
+![https://ai-studio-static-online.cdn.bcebos.com/f2aa1199a0cf4a31a68061a03b82f9f5a0bd5c98869c4daca5e735b2e98cf4e0](https://ai-studio-static-online.cdn.bcebos.com/f2aa1199a0cf4a31a68061a03b82f9f5a0bd5c98869c4daca5e735b2e98cf4e0)
 
 ### DQN存在的过估计（overestimate）问题
 
-`DQN`直接选取目标网络（Target Q Network）中下一个State各个Action对应的`Q`值最大的那一个`Q`值，并且会不断向下传递，导致`DQN`估计的`Q`值往往会偏大。`
+`DQN`直接选取目标网络（Target Q Network）中下一个State各个Action对应的`Q`值最大的那一个`Q`值，并且会不断向下传递，导致`DQN`估计的`Q`值往往会偏大。
 
 ### PARL代码
 
@@ -130,9 +130,9 @@ class DQN(Algorithm):
         self.model.sync_weights_to(self.target_model)
 ```
 
-![file](./dqn_train.png)
+![file](../imgs/dqn_train.png)
 
-![file](./dqn_vdl.png)
+![file](../imgs/dqn_vdl.png)
 
 ## Double DQN
 
@@ -142,11 +142,11 @@ class DQN(Algorithm):
 
 实验结果也证明，`Double DQN`有效地防止了过度估计。
 
-![file](/home/kengkeng/Documents/LearningPaddle/ddqn.png)
+![file](../imgs/ddqn.png)
 
 同时，`Double DQN`也需要用到两个`Q`网络。`Q1`网络**推荐**能够获得最大`Q`值的动作；`Q2`网络计算这个动作在`Q2`网络中的`Q`值。这时候，`Fixed-Q-Target`的网络结构刚好能派上用场，因此`Double DQN`对`DQN`的唯一的变化就在目标函数上：
 
-![file](https://upload-images.jianshu.io/upload_images/4155986-fe9db451ace25e85.png?imageMogr2/auto-orient/strip|imageView2/2/w/1022/format/webp)
+![file](https://upload-images.jianshu.io/upload_images/4155986-fe9db451ace25e85.png)
 
 ### PARL代码
 
@@ -238,7 +238,7 @@ class DDQN(Algorithm):
 
 `Dueling DQN`是一种网络结构上的创新，其将网络分成了两部分：**值函数** 和 **优势函数**。
 
-![file](./dueling_dqn.png)
+![file](../imgs/dueling_dqn.png)
 
 图中将原有的`DQN`算法的网络输出分成了两部分，在数学上表示为：
 
@@ -258,7 +258,7 @@ class DDQN(Algorithm):
 
 采用这种方法，虽然使得值函数V和优势函数A不再完美的表示值函数和优势函数(在语义上的表示)，但是这种操作提高了稳定性。而且，并没有改变值函数V和优势函数A的本质表示。
 
-![file](/home/kengkeng/Documents/LearningPaddle/dueling_dqn2.png)
+![file](../imgs/dueling_dqn2.png)
 
 在更新网络时，让模型更倾向于去更新V而不是更新A，这是一种比较有效率的做法。
 

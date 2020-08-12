@@ -18,7 +18,7 @@ PaddleX的理念非常好，开箱即用，即使是小白也能很快上手，�
 
 数据集可以根据要求准备好对应文件目录，然后可以直接导入。数据集要切分后才能在项目中使用，相当于将整个数据集处理的过程可视化了。
 
-![file](./dataset.png)
+![file](../imgs/dataset.png)
 
 当然，个人觉得目前数据集功能还不完善，主要有下面几个问题，想必未来的版本会持续迭代完善更新
 
@@ -30,13 +30,13 @@ PaddleX的理念非常好，开箱即用，即使是小白也能很快上手，�
 
 这里还是前面的问题，没有办法识别GPU，但是PaddleX将配置文件可视化在用户体验上效果很好，基于Flask技术栈，也比较轻量级。
 
-![file](./project.png)
+![file](../imgs/project.png)
 
-![file](./proccess.png)
+![file](../imgs/proccess.png)
 
 VisualDL是最近Paddle生态的一大亮点，应该是直接对标Tensorboard，期待未来更加完善。
 
-![file](./visualdl.png)
+![file](../imgs/visualdl.png)
 
 ### 模型评估
 
@@ -46,6 +46,6 @@ VisualDL是最近Paddle生态的一大亮点，应该是直接对标Tensorboard�
 The MATPLOTLIBDATA environment variable was deprecated in Matplotlib 3.1 and will be removed in 3.3.
 ```
 
-![file](./result.png)
+![file](../imgs/result.png)
 
 但是这里也发现了一个问题，就是如果训练完成，测试和模型导出未完成，下次启动时进入PaddleX，可以看到模型评估和训练日志，但VisualDL、模型测试、模型导出是无法继续执行的。
