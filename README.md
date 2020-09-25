@@ -13,6 +13,12 @@ PaddlePaddle深度学习框架课程、使用笔记
 
 - [PaddleDetection：FCOS Anchor Free目标检测算法](https://aistudio.baidu.com/aistudio/projectdetail/237690)
 
+- [安全帽佩戴检测模型训练与一键部署（PaddleX、HubServing）](https://aistudio.baidu.com/aistudio/projectdetail/742090)
+
+- [PaddleX、PP-Yolo：手把手教你训练、加密、部署目标检测模型](https://aistudio.baidu.com/aistudio/projectdetail/920753) 
+
+- [PCB瑕疵检测mAP 98.8解决方案](https://aistudio.baidu.com/aistudio/projectdetail/1024089)
+
 ### 图像分割
 
 - [PaddleHub创意赛：太空广播操&宇宙演讲台](https://aistudio.baidu.com/aistudio/projectdetail/518071)
