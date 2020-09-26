@@ -2,6 +2,9 @@
 PaddlePaddle深度学习框架课程、使用笔记
 
 ## AI Studio公开项目合集
+### 开发环境
+
+- [脚本任务示例合集：PaddleDetection、PGL、Parakeet等](https://aistudio.baidu.com/aistudio/projectdetail/913043)
 
 ### 目标检测
 
